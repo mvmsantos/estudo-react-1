@@ -1,9 +1,12 @@
-function Pessoa(props) {
-    return <div>
-        <img src="" alt=""></img>
-        <h2>Nome: {props.nome}</h2>
-        <p>Idade: {props.idade}</p>
-        <p>xx: {props.qlq}</p>
-    </div>
+import styles from './Pessoa.module.css'
+
+function Pessoa({nome, idade, qlq}) {
+    return( 
+        <div className={styles.pessoaH1}>
+            <h2 className={styles.pessoaH2}>Nome: {nome}</h2>
+            <p>idade: {idade}</p>
+            <p>xx: {qlq}</p>
+        </div>
+    )
 }
-export default Pessoa
+export default Pessoa         
