@@ -1,12 +1,11 @@
 import './App.css';
-import Pessoa from './components/Pessoa'
+import List from './components/List';
 
 function App() {
   return (
     <div className="App">
         <h1>Olá React</h1>
-        <Pessoa nome="Ttototo" idade="30" qlq="qualquer"/>
-        <Pessoa nome="Ttototo" idade="30" qlq="qualquer"/>
+        <List />
     </div>
   );
 }
